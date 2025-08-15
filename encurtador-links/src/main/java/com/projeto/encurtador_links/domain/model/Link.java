@@ -1,4 +1,4 @@
-package com.projeto.encurtador_links.domain;
+package com.projeto.encurtador_links.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,9 +9,9 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ShortLink {
+public class Link {
     private String id;
     private String originalUrl;
-    private String shortenedUrl;
+    private String shortUrl;
     private LocalDateTime createdAt;
 }
