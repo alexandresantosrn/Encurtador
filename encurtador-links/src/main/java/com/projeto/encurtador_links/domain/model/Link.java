@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Link {
-    private String id;
+    private Long id;
     private String originalUrl;
     private String shortUrl;
     private LocalDateTime createdAt;
