@@ -1,10 +1,12 @@
-package com.projeto.encurtador_links.infrastructure.persistence.entity;
+package com.projeto.encurtador_links.infrastructure.persistence;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "links")
@@ -23,4 +25,6 @@ public class LinkEntity {
 
     @Column(nullable = false, unique = true)
     private String shortUrl;
+
+    private LocalDateTime createdAt;
 }
